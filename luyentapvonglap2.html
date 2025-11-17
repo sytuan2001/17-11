@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test2</title>
+</head>
+<body>
+<script>
+    // bài 1
+    let a = 0;
+    let b = 1;
+
+    for (let i = 0; i < 20; i++) {
+        console.log(a);
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+    bài 2
+    let n = parseInt(prompt("Nhập số n:"));
+    let i = 1;
+    let result = 1;
+
+    while (i <= n) {
+        result *= i;
+        i++;
+    }
+
+    console.log("Giai thừa = " + result);
+    // bài 3
+    for (let i = 1; i <= 5; i++) {
+        let line = "";
+        for (let j = 1; j <= i; j++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+    // bài 4
+    let height = 3;
+    let width = 7;
+
+    for (let i = 0; i < height; i++) {
+        let line = "";
+        for (let j = 0; j < width; j++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+    // bài 5
+    let money = parseFloat(prompt("Nhập số tiền ban đầu:"));
+    let months = parseInt(prompt("Nhập số tháng:"));
+    let rate = parseFloat(prompt("Nhập lãi suất tháng (vd: 0.01 cho 1%):"));
+
+    let i = 1;
+    while (i <= months) {
+        money = money * (1 + rate);
+        i++;
+    }
+
+    console.log("Số tiền cuối kỳ: " + money);
+    // bài 6
+    let size = 10;
+
+    for (let i = size/2; i <= size; i += 2) {
+        let line = "";
+
+        for (let j = 1; j < size - i; j += 2) line += " ";
+        for (let j = 1; j <= i; j++) line += "*";
+        for (let j = 1; j <= size - i; j++) line += " ";
+        for (let j = 1; j <= i; j++) line += "*";
+
+        console.log(line);
+    }
+
+    for (let i = size; i >= 1; i--) {
+        let line = "";
+        for (let j = 0; j < size - i; j++) line += " ";
+        for (let j = 1; j <= (i * 2) - 1; j++) line += "*";
+
+        console.log(line);
+    }
+
+</script>
+</body>
+</html>

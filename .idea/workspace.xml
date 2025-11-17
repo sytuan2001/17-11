@@ -39,6 +39,7 @@
     "JavaScript Debug.bai1.html.executor": "Run",
     "JavaScript Debug.bai2.html.executor": "Run",
     "JavaScript Debug.luyentapvonglap1.html.executor": "Run",
+    "JavaScript Debug.luyentapvonglap2.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763361266811</updated>
-      <workItem from="1763361267889" duration="7166000" />
+      <workItem from="1763361267889" duration="8885000" />
     </task>
     <servers />
   </component>
