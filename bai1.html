@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Cửu Chương</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            border: 1px solid #999;
+            padding: 10px 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h2>Bảng Cửu Chương</h2>
+
+<table id="bangCuuChuong"></table>
+
+<script>
+    // Tạo bảng cửu chương
+    function taoBangCuuChuong() {
+        var table = document.getElementById('bangCuuChuong');
+        var html = '';
+
+        // Tạo 9 hàng
+        for (var hang = 1; hang <= 9; hang++) {
+            html += '<tr>';
+
+            // Tạo 9 cột
+            for (var cot = 1; cot <= 9; cot++) {
+                var ketQua = hang * cot;
+                html += '<td>' + hang + 'x' + cot + '=' + ketQua + '</td>';
+            }
+
+            html += '</tr>';
+        }
+
+        table.innerHTML = html;
+    }
+
+    // Gọi hàm khi trang load
+    taoBangCuuChuong();
+</script>
+</body>
+</html>
