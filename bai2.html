@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số Nguyên Tố</title>
+</head>
+<body>
+<h1>Nhập N Số Nguyên Tố Đầu Tiên</h1>
+
+<p>Nhập số lượng: <input type="number" id="soLuong" min="1"></p>
+
+<button onclick="hienThiSoNguyenTo()">Hiển Thị</button>
+
+<h2>Kết Quả:</h2>
+<p id="ketqua"></p>
+
+<script>
+    function hienThiSoNguyenTo() {
+        // Bước 1: Lấy giá trị numbers từ ô input
+        var numbers = parseInt(document.getElementById('soLuong').value);
+
+        if (isNaN(numbers) || numbers <= 0) {
+            document.getElementById('ketqua').innerHTML =
+                '<span style="color: red;">Vui lòng nhập số hợp lệ!</span>';
+            return;
+        }
+
+        // Bước 2: Khai báo biến count và gán giá trị ban đầu là 0
+        var count = 0;
+
+        // Bước 3: Khai báo biến N và gán giá trị ban đầu là 2
+        var N = 2;
+
+        var ketQua = '';
+
+        // Bước 4: Sử dụng vòng lặp while (count < numbers)
+        while (count < numbers) {
+            // Kiểm tra N có phải là số nguyên tố không
+            var laSoNguyenTo = true;
+
+            if (N < 2) {
+                laSoNguyenTo = false;
+            } else {
+                for (var i = 2; i <= Math.sqrt(N); i++) {
+                    if (N % i == 0) {
+                        laSoNguyenTo = false;
+                        break;
+                    }
+                }
+            }
+
+            // Nếu N là số nguyên tố
+            if (laSoNguyenTo) {
+                // In giá trị của N
+                ketQua = ketQua + N + ', ';
+
+                // Tăng count lên 1
+                count = count + 1;
+            }
+
+            // Tăng giá trị của N lên 1 để kiểm tra số tiếp theo
+            N = N + 1;
+        }
+
+        // Xóa dấu phẩy cuối cùng
+        ketQua = ketQua.slice(0, -2);
+
+        // Hiển thị kết quả
+        document.getElementById('ketqua').innerHTML = ketQua;
+    }
+</script>
+</body>
+</html>
