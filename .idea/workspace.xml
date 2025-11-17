@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53642aef-b6f8-4e63-8cdc-5e86715871a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.bai1.html.executor": "Run",
     "JavaScript Debug.bai2.html.executor": "Run",
+    "JavaScript Debug.luyentapvonglap1.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -56,6 +56,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763361266811</updated>
-      <workItem from="1763361267889" duration="2361000" />
+      <workItem from="1763361267889" duration="7166000" />
     </task>
     <servers />
   </component>

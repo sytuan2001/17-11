@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+</head>
+<body>
+<script>
+    // //bài 1
+    for (let i = 1; i <= 100; i++) {
+        console.log(i);
+        if (i === 99) {
+            alert("Đã hoàn thành đến 99!");
+        }
+    }
+    //bài 2
+    let temp = Number(prompt("Nhập nhiệt độ hiện tại:"));
+
+    while (temp > 100 || temp < 20) {
+        if (temp > 100) {
+            temp = Number(prompt("Nhiệt độ quá cao! Vui lòng giảm nhiệt độ:"));
+        } else if (temp < 20) {
+            temp = Number(prompt("Nhiệt độ quá thấp! Vui lòng tăng nhiệt độ:"));
+        }
+    }
+    alert("Nhiệt độ hợp lý!");
+     //bài 3
+    let a = 0, b = 1;
+    for (let i = 1; i <= 20; i++) {
+        console.log(a);
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+    // bài 4
+    let a = 0, b = 1;
+
+    while (true) {
+        let next = a + b;
+        a = b;
+        b = next;
+
+        if (a % 5 === 0 && a !== 0) {
+            console.log("Số Fibonacci đầu tiên chia hết cho 5 là:", a);
+            break;
+        }
+    }
+    // bài 5
+    let a = 0, b = 1;
+    let sum = 0;
+
+    for (let i = 1; i <= 20; i++) {
+        sum += a;
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+
+    console.log("Tổng 20 số đầu tiên:", sum);
+    // bài 6
+    let count = 0;
+    let num = 1;
+    let sum = 0;
+
+    while (count < 30) {
+        if (num % 7 === 0) {
+            sum += num;
+            count++;
+        }
+        num++;
+    }
+
+    console.log("Tổng 30 số chia hết cho 7 đầu tiên là:", sum);
+    // bài 7
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+    // bài 8
+</script>
+</body>
+</html>
